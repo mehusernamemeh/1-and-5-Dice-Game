@@ -1,3 +1,31 @@
+"""
+1 AND 5 DICE GAME RULES:
+Players take turns rolling 5 dice at once.
+They can score points under the following conditions:
+
+    -100 points for each roll of 1.
+    -50 points for each roll of 5.
+    -1500 points for a "straight" (a roll of 1,2,3,4,5 or 2,3,4,5,6).
+    -If players roll 3 dice of the same value (other than 1 or 5), they score 100 times the value of the dice.
+        ex. If a player rolls 4,4,4,2,6 , they score 100 * 4
+    -If players roll 4 dice of the same value (other than 1 or 5), they score 100 times the value of the dice times 2.
+        ex. If a player rolls 4,4,4,4,6 , they score 100 * 4 *2
+    -If players roll 5 dice of the same value (other than 1 or 5), they score 100 times the value of the dice times 4.
+
+Players may choose to continue rolling as long as they have scored on their previous roll.       
+If a player scores points on a dice, that dice is removed from the next roll.
+If a player scores on all remaining dice, they may continue rolling with 5 dice.
+If a player chooses to continue rolling and does not score, they score 0 and their turn ends.
+If a player chooses to stop rolling, they keep the points and pass the remaining dice to the next player.
+If a player is passed dice from a player who stopped rolling, they may choose to roll the remaining dice
+and extend the previous player's score.
+    ex. Player A has 1000 points, and 1 dice remaining. They choose not to roll. They receive 1000 points
+        and pass 1 dice to Player B. Player B may choose to roll the 1 die to receive 1000 points (what the
+        previous player earned) + the value of the die. They may also choose to roll 5 dice as normal for 
+        no extra points. Player B does not "steal" points from Player A.
+        
+"""
+
 from ast import Mod
 from random import randint
 from collections import *
