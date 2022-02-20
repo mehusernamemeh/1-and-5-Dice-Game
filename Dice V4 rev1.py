@@ -3,8 +3,8 @@ from random import randint
 from collections import *
 from time import *
 
-#if there is a problem with the code its because vscode is a fag and keeps importing random fucking libraries ^^^
-#i need randint from random and * from collections. thats it. 
+#if there is a problem it might be because vscode is REDACTED and keeps importing random libraries ^^^
+#i need randint from random and * from collections and time. thats it. 
 
 rollScore = 0
 rolls = []
