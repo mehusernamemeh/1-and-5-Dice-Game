@@ -23,7 +23,8 @@ and extend the previous player's score.
         and pass 1 dice to Player B. Player B may choose to roll the 1 die to receive 1000 points (what the
         previous player earned) + the value of the die. They may also choose to roll 5 dice as normal for 
         no extra points. Player B does not "steal" points from Player A.
-        
+
+A Player wins when their score reaches 10,000 points, without going over 10,000 points.
 """
 
 from ast import Mod
